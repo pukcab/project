@@ -1,0 +1,10 @@
+name: ItemManager
+form: $/sierra/syllabus/models/item/fields.yaml
+modelClass: Sierra\Syllabus\Models\Item
+defaultRedirect: sierra/syllabus/itemmanager
+create:
+    redirect: 'sierra/syllabus/itemmanager/update/:id'
+    redirectClose: sierra/syllabus/itemmanager
+update:
+    redirect: sierra/syllabus/itemmanager
+    redirectClose: sierra/syllabus/itemmanager

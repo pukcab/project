@@ -1,0 +1,14 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+subunit:
+    label: Subunits
+    view:
+        list: $/sierra/syllabus/models/Subunit/columns.yaml
+ 
+    manage:
+         showSearch: true
+         #recordsPerPage: 10
+         list: $/sierra/syllabus/models/subunit/columns.yaml
+         form: $/sierra/syllabus/models/subunit/fields.yaml

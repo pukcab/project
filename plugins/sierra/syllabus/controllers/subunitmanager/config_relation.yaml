@@ -1,0 +1,14 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+item:
+    label: Items
+    view:
+        list: $/sierra/syllabus/models/item/columns.yaml
+ 
+    manage:
+         showSearch: true
+         #recordsPerPage: 10
+         list: $/sierra/syllabus/models/item/columns.yaml
+         form: $/sierra/syllabus/models/item/fields.yaml

@@ -1,0 +1,4 @@
+title: ItemManager
+modelClass: Sierra\Syllabus\Models\Item
+toolbar:
+    buttons: reorder_toolbar

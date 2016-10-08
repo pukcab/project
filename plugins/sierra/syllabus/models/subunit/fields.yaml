@@ -1,0 +1,17 @@
+fields:
+    code:
+        label: 'Subunit Code'
+        span: left
+        oc.commentPosition: ''
+        type: text
+
+    description:
+        label: Description
+        span: full
+        oc.commentPosition: ''
+        type: text
+    
+    item:
+        label: Syllabus Items
+        type: partial
+        path: item_picker

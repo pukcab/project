@@ -1,0 +1,174 @@
+title = "projectlist"
+url = "/projectlist"
+is_hidden = 0
+layout = "default"
+[builderList]
+modelClass = "Sierra\Syllabus\Models\Item"
+scope = "-"
+displayColumn = "description"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% set records = builderList.records %}
+{% set displayColumn = builderList.displayColumn %}
+{% set noRecordsMessage = builderList.noRecordsMessage %}
+{% set detailsPage = builderList.detailsPage %}
+{% set detailsKeyColumn = builderList.detailsKeyColumn %}
+{% set detailsUrlParameter = builderList.detailsUrlParameter %}
+
+
+<!-- page content -->
+<div class="right_col" role="main">
+  <div class="">
+    <div class="page-title">
+      <div class="title_left">
+        <h3>Syllabus Listing <small>Helicopter Course - Stage 1</small></h3>
+      </div>
+
+
+
+                
+
+
+
+
+
+      <div class="title_right">
+        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Go!</button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="clearfix"></div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="x_panel">
+          <div class="x_title">
+            <h2>H1 - Control the helicopter on the Ground.</h2>
+            <ul class="nav navbar-right panel_toolbox">
+              <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Settings 1</a>
+                  </li>
+                  <li><a href="#">Settings 2</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a class="close-link"><i class="fa fa-close"></i></a>
+              </li>
+            </ul>
+            <div class="clearfix"></div>
+          </div>
+          <div class="x_content">
+
+            <h4>H1.1 Blah Blah on the Ground.</h4>
+
+            <!-- start project list -->
+            <table class="table table-striped projects">
+              <thead>
+                <tr>
+                  <th style="width: 10%">Code</th>
+                  <th style="width: 70%">Description</th>
+                  <th>Progress</th>
+                  <th>Stamp As</th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {% for record in records %}
+       
+            
+                <tr>
+                  <td>{{ record.reference }}</td>
+                  <td>
+                    <a>{{ record.description }}</a> 
+                    <small> #12345</small>
+                  </td>
+                  
+                  <td class="project_progress">
+                    <div class="progress progress_sm">
+                      <div class="progress-bar bg-red" role="progressbar" data-transitiongoal="12"></div>
+                    </div>
+                    <small>57% Complete</small>
+                  </td>
+                  <td>
+                    <button type="button" class="btn-xs btn-success btn-xs">Briefed</button>
+                  </td>
+                </tr> 
+
+                
+                
+
+                
+            
+       
+    {% else %}
+        <li class="no-data">{{ noRecordsMessage }}</li>
+    {% endfor %}
+
+
+    
+              </tbody>
+            </table>
+            <!-- end project list -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        <!-- /page content -->
+
+
+
+
+
+
+
+{% if records.lastPage > 1 %}
+    <ul class="pagination">
+        {% if records.currentPage > 1 %}
+            <li><a href="{{ this.page.baseFileName|page({ (pageParam): (records.currentPage-1) }) }}">&larr; Prev</a></li>
+        {% endif %}
+
+        {% for page in 1..records.lastPage %}
+            <li class="{{ records.currentPage == page ? 'active' : null }}">
+                <a href="{{ this.page.baseFileName|page({ (pageParam): page }) }}">{{ page }}</a>
+            </li>
+        {% endfor %}
+
+        {% if records.lastPage > records.currentPage %}
+            <li><a href="{{ this.page.baseFileName|page({ (pageParam): (records.currentPage+1) }) }}">Next &rarr;</a></li>
+        {% endif %}
+    </ul>
+{% endif %}

@@ -1,0 +1,11 @@
+title: 'Syllabus Units'
+modelClass: Sierra\Syllabus\Models\Unit
+list: $/sierra/syllabus/models/unit/columns.yaml
+recordUrl: 'sierra/syllabus/unitmanager/update/:id'
+noRecordsMessage: 'No Records'
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

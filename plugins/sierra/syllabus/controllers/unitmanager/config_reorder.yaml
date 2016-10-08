@@ -1,0 +1,5 @@
+title: UnitManager
+modelClass: Sierra\Syllabus\Models\Unit
+nameFrom: code
+toolbar:
+    buttons: reorder_toolbar

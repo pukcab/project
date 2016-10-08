@@ -1,0 +1,4 @@
+title: SubUnitManager
+modelClass: Sierra\Syllabus\Models\Subunit
+toolbar:
+    buttons: reorder_toolbar

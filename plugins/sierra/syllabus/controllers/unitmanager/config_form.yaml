@@ -1,0 +1,14 @@
+name: 'Syllabus Unit Information'
+modelClass: Sierra\Syllabus\Models\Unit
+form: $/sierra/syllabus/models/unit/fields.yaml
+defaultRedirect: sierra/syllabus/unitmanager
+create:
+    title: 'Create Syllabus Unit'
+    redirect: 'sierra/syllabus/unitmanager/update/:id'
+    redirectClose: sierra/syllabus/unitmanager
+update:
+    title: 'Updae Syllabus Unit'
+    redirect: sierra/syllabus/unitmanager
+    redirectClose: sierra/syllabus/unitmanager
+preview:
+    title: 'Preview Syllabus Unit'

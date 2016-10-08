@@ -1,0 +1,80 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table sierra_syllabus_unit'
+    - builder_table_create_sierra_syllabus_.php
+1.0.3:
+    - 'Updated table sierra_syllabus_unit'
+    - builder_table_update_sierra_syllabus_.php
+1.0.5:
+    - 'Updated table sierra_syllabus - rename'
+    - builder_table_update_sierra_syllabus_units.php
+1.0.7:
+    - 'Created table sierra_syllabus_sub_unit'
+    - builder_table_create_sierra_syllabus_sub_unit.php
+1.0.8:
+    - 'Updated table sierra_syllabus_sub_unit'
+    - builder_table_update_sierra_syllabus_sub_units.php
+1.0.9:
+    - 'Updated table sierra_syllabus_units'
+    - builder_table_update_sierra_syllabus_units_2.php
+1.0.10:
+    - 'Updated table sierra_syllabus_sub_units'
+    - builder_table_update_sierra_syllabus_sub_units_2.php
+1.0.11:
+    - 'Updated table sierra_syllabus_sub_units'
+    - builder_table_update_sierra_syllabus_sub_units_3.php
+1.0.12:
+    - 'Updated table sierra_syllabus_units'
+    - builder_table_update_sierra_syllabus_units_3.php
+1.0.13:
+    - 'Created table sierra_syllabus_items'
+    - builder_table_create_sierra_syllabus_items.php
+1.0.14:
+    - 'Updated table sierra_syllabus_items'
+    - builder_table_update_sierra_syllabus_items.php
+1.0.15:
+    - 'Updated table sierra_syllabus_sub_units'
+    - builder_table_update_sierra_syllabus_sub_units_4.php
+1.0.16:
+    - 'Updated table sierra_syllabus_sub_units'
+    - builder_table_update_sierra_syllabus_sub_units_5.php
+1.0.17:
+    - 'Updated table sierra_syllabus_sub_units'
+    - builder_table_update_sierra_syllabus_sub_units_6.php
+1.0.18:
+    - 'Updated table sierra_syllabus_sub_units'
+    - builder_table_update_sierra_syllabus_sub_units_7.php
+1.0.19:
+    - 'Created table sierra_syllabus_subunits_items'
+    - builder_table_create_sierra_syllabus_subunits_items.php
+1.0.20:
+    - 'Updated table sierra_syllabus_sub_units'
+    - builder_table_update_sierra_syllabus_sub_units_8.php
+1.0.21:
+    - 'Updated table sierra_syllabus_units'
+    - builder_table_update_sierra_syllabus_units_4.php
+1.0.22:
+    - 'Updated table sierra_syllabus_sub_units'
+    - builder_table_update_sierra_syllabus_subunits.php
+1.0.23:
+    - 'Created table sierra_syllabus_unit_subunits'
+    - builder_table_create_sierra_syllabus_unit_subunits.php
+1.0.24:
+    - 'Updated table sierra_syllabus_subunits_items'
+    - builder_table_update_sierra_syllabus_subunits_items.php
+1.0.25:
+    - 'Updated table sierra_syllabus_subunits_items'
+    - builder_table_update_sierra_syllabus_subunit_items.php
+1.0.26:
+    - 'Updated table sierra_syllabus_unit_subunits'
+    - builder_table_update_sierra_syllabus_unit_subunits.php
+1.0.27:
+    - 'Updated table sierra_syllabus_unit_subunits'
+    - builder_table_update_sierra_syllabus_unit_subunits_2.php
+1.0.28:
+    - 'Updated table sierra_syllabus_subunits'
+    - builder_table_update_sierra_syllabus_subunits_2.php
+1.0.29:
+    - 'Updated table sierra_syllabus_units'
+    - builder_table_update_sierra_syllabus_units_5.php

@@ -1,0 +1,32 @@
+plugin:
+    name: 'sierra.syllabus::lang.plugin.name'
+    description: 'sierra.syllabus::lang.plugin.description'
+    author: Sierra
+    icon: oc-icon-book
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Syllabus
+        url: sierra/syllabus/unitmanager
+        icon: icon-book
+        sideMenu:
+            syllabus_units:
+                label: Units
+                url: sierra/syllabus/unitmanager
+                icon: icon-bookmark
+                permissions:
+                    - syllabus_manager
+            syllabus_sub_units:
+                label: 'Sub Units'
+                url: sierra/syllabus/subunitmanager
+                icon: icon-bookmark-o
+                permissions:
+                    - syllabus_manager
+            syllabus_items:
+                label: Items
+                url: sierra/syllabus/itemmanager
+                icon: icon-bookmark-o
+permissions:
+    syllabus_manager:
+        tab: 'Syllabus Manager'
+        label: 'Syllabus Manager'

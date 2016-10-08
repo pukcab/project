@@ -1,0 +1,11 @@
+columns:
+    code:
+        label: SubUnit
+        type: text
+        searchable: true
+        sortable: true
+    description:
+        label: Description
+        type: text
+        searchable: true
+        sortable: true

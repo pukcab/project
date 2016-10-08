@@ -1,0 +1,13 @@
+title = "Syllabus Unit Details"
+url = "/syllabus-unit/:id"
+layout = "default"
+is_hidden = 0
+
+[builderDetails]
+modelClass = "Sierra\Syllabus\Models\Unit"
+identifierValue = "{{ :id }}"
+modelKeyColumn = "id"
+displayColumn = "description"
+notFoundMessage = "Record not found"
+==
+{% component 'builderDetails' %}

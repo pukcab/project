@@ -1,0 +1,11 @@
+name: SubUnitManager
+modelClass: Sierra\Syllabus\Models\Subunit
+form: $/sierra/syllabus/models/subunit/fields.yaml
+defaultRedirect: sierra/syllabus/subunitmanager
+create:
+    redirect: 'sierra/syllabus/subunitmanager/update/:id'
+    redirectClose: sierra/syllabus/subunitmanager
+update:
+    redirect: sierra/syllabus/subunitmanager
+    redirectClose: sierra/syllabus/subunitmanager
+preview: {  }

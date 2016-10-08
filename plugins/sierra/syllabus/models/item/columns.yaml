@@ -1,0 +1,12 @@
+columns:
+    reference:
+        label: reference1
+        type: text
+        sortable: true
+        searchable: true
+        width: 10%
+    description:
+        label: description2
+        type: text
+        sortable: true
+    
